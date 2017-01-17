@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>水平垂直布局</title>
+	<style>
+		.parent {
+			width: 200px;
+			height: 250px;
+			background-color: red;
+		}
+		.float {
+			float: left;
+			width: 100%;
+			height: 50%;
+			margin-bottom: -50px;	/* Content的高度的一半 */
+			background-color: transparent;
+		}
+
+		.child {
+			clear: both;
+			height: 100px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<section class="block1">
+		<div class="parent">
+			<div class="float"></div>
+			<div class="child">content here</div>
+		</div>		
+	</section>
+</body>
+</html>
