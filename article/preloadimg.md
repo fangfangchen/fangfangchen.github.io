@@ -1,5 +1,6 @@
 #图片预加载
-`
+
+###简单版本的实现：
 	function preloadImg (arr) {
 		var newImages = [];
 		var arr = (typeof arr != 'object') ? [arr] : arr;
@@ -8,10 +9,8 @@
 			newImages[i].src = arr[i];
 		}
 	}
-`
 
-
-`
+###加上图片是否加载成功与否的回调：
 	function preloadImg (arr) {
 		var newImages = [];
 		var imglen = 0; 
@@ -29,9 +28,8 @@
 			newImages[i].onerror = imageloadpost;
 		}
 	}
-`
 
-`
+###返回一个对象，可以执行回调
 	function preloadImg (arr) {
 		var newImages = [];
 		var imglen = 0;
@@ -60,4 +58,3 @@
 	load.done(function (images) {
 		console.log(images);
 	});
-`
