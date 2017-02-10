@@ -19,6 +19,7 @@
 	git reset --hard HEAD~3
 
 ###远程库版本回退
+> 参考地址：http://www.cnblogs.com/hqbhonker/p/5092300.html<br />
  先将本地的分支回退到某个commit，然后删除远程分支，再重新push本地分支。
 操作步骤：<br />
 1.git checkout branch-name<br />
