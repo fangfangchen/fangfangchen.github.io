@@ -9,7 +9,7 @@
 	git branch -D branch-name
 
 ###删除远程分支
-	git push origin :branch-name (origin后面有空格)
+	git push origin :branch-name(直接分支名) (origin后面有空格)
 
 ##版本回退
 
@@ -30,3 +30,19 @@
 6.git push origin branch-name 用回滚后的本地分支重新建立远程分支<br />
 7.git push origin :branch-name-backup 如果前面成功了，就删除备份分支<br />
 
+
+###git查看远程仓库地址
+
+	git remote -v
+
+
+### git保存工作区
+	
+	// 暂存当前状态
+	git stash
+	
+	// 显示已暂存列表
+	git stash list
+
+	// 恢复暂存区和工作区进度
+	git stash pop --index stash@{0}
