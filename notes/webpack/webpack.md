@@ -52,3 +52,16 @@
 	}
 	/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
 6. chunks: 以数组的形式指定由html-webpack-plugin负责加载的chunk文件（打包后生成的js文件），不指定的话就会加载所有的chunk。<br />
+
+
+**webpack-dev-middleware**
+
+webpack-dev-middleware是一个处理静态资源的middleware。前面说的webpack-dev-server，实际上是一个小型Express服务器，它也是用webpack-dev-middleware来处理webpack编译后的输出。
+
+**webpack-hot-middleware**
+
+webpack-hot-middleware是一个结合webpack-dev-middleware使用的middleware，它可以实现浏览器的无刷新更新（hot reload）。这也是webpack文档里常说的HMR（Hot Module Replacement）。HMR和热加载的区别是：热加载是刷新整个页面。
+
+**cross-env**
+
+cross-env 也是一个npm组件，可以处理windows和其他Unix系统在设置环境变量的写法上不一致的问题。
